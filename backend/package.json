@@ -1,0 +1,26 @@
+{
+  "name": "face-time",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Aaditya Goel Aka Bakibytes ",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch src/app.js",
+    "start": "node src/app.js",
+    "prod": "node src/app.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "http-status": "^2.1.0",
+    "mongoose": "^9.10.1",
+    "socket.io": "^4.8.3"
+  }
+}

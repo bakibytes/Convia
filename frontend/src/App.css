@@ -1,0 +1,692 @@
+.landingPageContainer {
+  width: 100vw;
+  height: 100vh;
+  background: url("/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.landingPageContainer nav {
+  padding-inline: 1.2rem;
+  padding-block: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.landingPageContainer nav h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.landingPageContainer nav .navlist {
+  display: flex;
+  gap: 1.6rem;
+  cursor: pointer;
+
+}
+
+.landingMainContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 3rem;
+  height: 80vh;
+  align-items: center;
+}
+
+.landingMainContainer>div:nth-child(1) {
+  font-size: 2.2rem;
+}
+
+.landingMainContainer>div:nth-child(1) div[role='button'] {
+  background: #D97500;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-top: 1.9rem;
+}
+
+.landingMainContainer>div:nth-child(1) div[role='button'] a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+}
+
+.landingMainContainer>div:nth-child(2) img {
+  height: 70vh;
+  width: auto;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  text-align: center;
+
+}
+.meetContainer {
+  display: flex;
+  padding-inline: 20px;
+  height: 80vh;
+  gap: 10vw;
+  justify-content: center;
+}
+
+
+
+.leftPanel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.rightPanel {
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel > img {
+  width: 30vw;
+  height: auto;
+  border-radius: 20px;
+}
+
+.homePage {
+  --home-ink: #212238;
+  --home-muted: #77788b;
+  --home-orange: #f28b36;
+  min-height: 100vh;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 91% 13%, rgba(248, 185, 133, 0.18), transparent 28rem),
+    #faf9f7;
+  color: var(--home-ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.homeNav {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  width: min(1240px, calc(100% - 80px));
+  height: 92px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(33, 34, 56, 0.08);
+}
+
+.homeBrand {
+  display: inline-flex;
+  align-items: center;
+  color: var(--home-ink);
+  font-size: 1.7rem;
+  font-weight: 750;
+  letter-spacing: -0.08em;
+  text-decoration: none;
+}
+
+.homeBrandMark {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  margin-right: 2px;
+  place-items: center;
+  border-radius: 13px;
+  background: var(--home-orange);
+  color: white;
+  font-size: 1.6rem;
+  letter-spacing: -0.08em;
+  box-shadow: 0 7px 16px rgba(242, 139, 54, 0.23);
+}
+
+.homeActions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.homeActions .homeHistoryButton,
+.homeActions .homeLogoutButton {
+  min-width: 0;
+  border-radius: 10px;
+  color: var(--home-ink);
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.homeActions .homeHistoryButton {
+  padding: 9px 13px;
+}
+
+.homeActions .homeHistoryButton .MuiButton-startIcon {
+  color: var(--home-orange);
+}
+
+.homeActions .homeLogoutButton {
+  padding: 9px 13px;
+  color: #77788b;
+}
+
+.homeNavDivider {
+  width: 1px;
+  height: 24px;
+  background: rgba(33, 34, 56, 0.12);
+}
+
+.homeHero {
+  position: relative;
+  display: grid;
+  width: min(1240px, calc(100% - 80px));
+  min-height: min(710px, calc(100vh - 150px));
+  margin: 0 auto;
+  padding: 56px 0 60px;
+  align-items: center;
+  grid-template-columns: minmax(0, 1.03fr) minmax(420px, 0.97fr);
+  column-gap: 44px;
+}
+
+.homeContent {
+  position: relative;
+  z-index: 1;
+  max-width: 590px;
+  padding: 20px 0;
+}
+
+.homeEyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #8b7180;
+  font-size: 0.73rem;
+  font-weight: 750;
+  letter-spacing: 0.16em;
+}
+
+.homeEyebrowDot,
+.homeAvailabilityDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--home-orange);
+  box-shadow: 0 0 0 4px rgba(242, 139, 54, 0.13);
+}
+
+.homeContent h1 {
+  margin-top: 24px;
+  color: var(--home-ink);
+  font-size: clamp(3rem, 5vw, 4.6rem);
+  font-weight: 760;
+  letter-spacing: -0.075em;
+  line-height: 1.06;
+}
+
+.homeContent h1 span {
+  color: var(--home-orange);
+}
+
+.homeIntro {
+  max-width: 445px;
+  margin-top: 21px;
+  color: var(--home-muted);
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.homeJoinCard {
+  max-width: 550px;
+  margin-top: 34px;
+  padding: 25px;
+  border: 1px solid rgba(33, 34, 56, 0.07);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.91);
+  box-shadow: 0 20px 60px rgba(33, 34, 56, 0.08);
+}
+
+.homeJoinHeading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.homeJoinIcon,
+.homeCaptionIcon,
+.homeFloatingIcon {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  color: var(--home-orange);
+}
+
+.homeJoinIcon {
+  width: 46px;
+  height: 46px;
+  border-radius: 13px;
+  background: #fff3e9;
+}
+
+.homeJoinIcon svg {
+  font-size: 25px;
+}
+
+.homeJoinHeading h2 {
+  color: var(--home-ink);
+  font-size: 1.06rem;
+  font-weight: 700;
+}
+
+.homeJoinHeading p {
+  margin-top: 3px;
+  color: var(--home-muted);
+  font-size: 0.84rem;
+}
+
+.homeJoinControls {
+  display: flex;
+  margin-top: 21px;
+  gap: 11px;
+}
+
+.homeJoinControls .homeMeetingInput {
+  min-width: 0;
+  flex: 1;
+}
+
+.homeMeetingInput .MuiOutlinedInput-root {
+  min-height: 54px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.homeMeetingInput .MuiOutlinedInput-notchedOutline {
+  border-color: #e8e7eb;
+}
+
+.homeMeetingInput .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #c9c7d0;
+}
+
+.homeMeetingInput .MuiInputLabel-root {
+  color: #898a99;
+}
+
+.homeJoinControls .homeJoinButton {
+  min-width: 132px;
+  padding: 0 19px;
+  border-radius: 10px;
+  background: var(--home-ink);
+  box-shadow: none;
+  font-size: 0.94rem;
+  font-weight: 650;
+  text-transform: none;
+}
+
+.homeJoinControls .homeJoinButton:hover {
+  background: #34354f;
+  box-shadow: 0 8px 18px rgba(33, 34, 56, 0.16);
+}
+
+.homePrivacyNote {
+  display: flex;
+  margin-top: 17px;
+  align-items: center;
+  gap: 7px;
+  color: #878796;
+  font-size: 0.77rem;
+}
+
+.homePrivacyNote svg {
+  color: #8ca28a;
+  font-size: 15px;
+}
+
+.homeAvailability {
+  display: flex;
+  margin-top: 25px;
+  align-items: center;
+  gap: 10px;
+  color: #797a89;
+  font-size: 0.83rem;
+}
+
+.homeAvailabilityDot {
+  width: 7px;
+  height: 7px;
+  background: #70a881;
+  box-shadow: 0 0 0 4px rgba(112, 168, 129, 0.13);
+}
+
+.homeVisual {
+  position: relative;
+  display: grid;
+  min-height: 540px;
+  place-items: center;
+}
+
+.homeVisualOrb {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.homeVisualOrbOne {
+  top: 6%;
+  right: 2%;
+  width: 370px;
+  height: 370px;
+  background: radial-gradient(circle, rgba(250, 199, 155, 0.4), rgba(250, 199, 155, 0));
+}
+
+.homeVisualOrbTwo {
+  bottom: 1%;
+  left: 0;
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, rgba(190, 185, 248, 0.3), rgba(190, 185, 248, 0));
+}
+
+.homeImageCard {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 460px);
+  padding: 18px 20px 15px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 28px 80px rgba(49, 43, 65, 0.13);
+  transform: rotate(2deg);
+}
+
+.homeImageTopline {
+  display: flex;
+  height: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.homeImageLive {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #77788b;
+  font-size: 0.61rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+}
+
+.homeImageLive > span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #72b889;
+}
+
+.homeImageDots {
+  color: #9999a5;
+  font-size: 0.8rem;
+  letter-spacing: 0.13em;
+}
+
+.homeImageCard > img {
+  display: block;
+  width: 100%;
+  height: 310px;
+  margin-top: 8px;
+  border-radius: 17px;
+  background: #fff;
+  object-fit: contain;
+}
+
+.homeImageCaption {
+  display: flex;
+  min-height: 62px;
+  align-items: center;
+  gap: 11px;
+}
+
+.homeCaptionIcon {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: #fff3e9;
+}
+
+.homeCaptionIcon svg {
+  font-size: 21px;
+}
+
+.homeImageCaption > span:nth-child(2),
+.homeFloatingNote > span:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.homeImageCaption strong,
+.homeFloatingNote strong {
+  color: var(--home-ink);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.homeImageCaption small,
+.homeFloatingNote small {
+  color: #898a99;
+  font-size: 0.7rem;
+}
+
+.homeCaptionSignal {
+  display: flex;
+  height: 20px;
+  margin-left: auto;
+  align-items: center;
+  gap: 3px;
+}
+
+.homeCaptionSignal i {
+  width: 3px;
+  border-radius: 3px;
+  background: #75af88;
+}
+
+.homeCaptionSignal i:nth-child(1) {
+  height: 8px;
+}
+
+.homeCaptionSignal i:nth-child(2) {
+  height: 13px;
+}
+
+.homeCaptionSignal i:nth-child(3) {
+  height: 18px;
+}
+
+.homeFloatingNote {
+  position: absolute;
+  z-index: 2;
+  right: -7px;
+  bottom: 74px;
+  display: flex;
+  padding: 13px 17px 13px 13px;
+  align-items: center;
+  gap: 11px;
+  border: 1px solid rgba(33, 34, 56, 0.06);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 15px 35px rgba(49, 43, 65, 0.11);
+  transform: rotate(-3deg);
+}
+
+.homeFloatingIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 11px;
+  background: #f2f0ff;
+  color: #7770d7;
+}
+
+.homeFloatingIcon svg {
+  font-size: 19px;
+}
+
+.homeFooter {
+  display: flex;
+  width: min(1240px, calc(100% - 80px));
+  margin: 0 auto;
+  padding: 19px 0 24px;
+  justify-content: space-between;
+  border-top: 1px solid rgba(33, 34, 56, 0.08);
+  color: #9898a4;
+  font-size: 0.72rem;
+}
+
+.homeFooter span:first-child {
+  font-weight: 750;
+  letter-spacing: 0.14em;
+}
+
+@media (max-width: 900px) {
+  .homeHero {
+    min-height: auto;
+    padding: 65px 0 55px;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 0.8fr);
+    column-gap: 24px;
+  }
+
+  .homeVisual {
+    min-height: 440px;
+  }
+
+  .homeImageCard {
+    padding: 15px;
+  }
+
+  .homeImageCard > img {
+    height: 250px;
+  }
+
+  .homeFloatingNote {
+    right: -5px;
+    bottom: 36px;
+  }
+}
+
+@media (max-width: 680px) {
+  .homeNav,
+  .homeHero,
+  .homeFooter {
+    width: calc(100% - 40px);
+  }
+
+  .homeNav {
+    height: 74px;
+  }
+
+  .homeBrand {
+    font-size: 1.45rem;
+  }
+
+  .homeBrandMark {
+    width: 35px;
+    height: 35px;
+    border-radius: 11px;
+    font-size: 1.4rem;
+  }
+
+  .homeActions {
+    gap: 5px;
+  }
+
+  .homeActions .homeHistoryButton,
+  .homeActions .homeLogoutButton {
+    padding: 8px;
+    font-size: 0.82rem;
+  }
+
+  .homeNavDivider {
+    height: 20px;
+  }
+
+  .homeHero {
+    padding: 54px 0 38px;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .homeContent {
+    padding: 0;
+  }
+
+  .homeContent h1 {
+    margin-top: 19px;
+    font-size: clamp(2.8rem, 12vw, 4rem);
+  }
+
+  .homeIntro {
+    margin-top: 16px;
+    font-size: 0.98rem;
+  }
+
+  .homeJoinCard {
+    margin-top: 26px;
+    padding: 19px;
+  }
+
+  .homeJoinControls {
+    flex-direction: column;
+  }
+
+  .homeJoinControls .homeJoinButton {
+    min-height: 50px;
+  }
+
+  .homeVisual {
+    min-height: 370px;
+    margin-top: 24px;
+  }
+
+  .homeImageCard {
+    width: min(100%, 410px);
+    transform: rotate(1deg);
+  }
+
+  .homeImageCard > img {
+    height: 230px;
+  }
+
+  .homeFloatingNote {
+    right: 0;
+    bottom: 15px;
+  }
+
+  .homeFooter {
+    padding: 17px 0 21px;
+  }
+}
+
+@media (max-width: 380px) {
+  .homeNav,
+  .homeHero,
+  .homeFooter {
+    width: calc(100% - 28px);
+  }
+
+  .homeActions {
+    gap: 0;
+  }
+
+  .homeActions .homeHistoryButton,
+  .homeActions .homeLogoutButton {
+    padding-inline: 6px;
+    font-size: 0.77rem;
+  }
+
+  .homeImageCard > img {
+    height: 195px;
+  }
+}
