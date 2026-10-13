@@ -1,6 +1,6 @@
 .landingPageContainer {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
   background: url("/background.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -57,6 +57,76 @@
 .landingMainContainer>div:nth-child(2) img {
   height: 70vh;
   width: auto;
+  max-width: 100%;
+}
+
+@media (max-width: 900px) {
+  .landingMainContainer {
+    padding-inline: 2rem;
+  }
+
+  .landingMainContainer>div:nth-child(1) {
+    font-size: 1.8rem;
+  }
+
+  .landingMainContainer>div:nth-child(2) img {
+    height: 55vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .landingPageContainer nav {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 1.25rem;
+  }
+
+  .landingPageContainer nav .navlist {
+    width: 100%;
+    justify-content: space-between;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .landingMainContainer {
+    height: auto;
+    min-height: 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem 1.25rem;
+    text-align: center;
+  }
+
+  .landingMainContainer>div:nth-child(1) {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+  }
+
+  .landingMainContainer>div:nth-child(1) h1 {
+    line-height: 1.2;
+  }
+
+  .landingMainContainer>div:nth-child(1) p {
+    margin-top: 0.75rem;
+    font-size: 0.65em;
+  }
+
+  .landingMainContainer>div:nth-child(1) div[role='button'] {
+    margin: 1.25rem auto 0;
+    padding: 0.8rem 1rem;
+  }
+
+  .landingMainContainer>div:nth-child(1) div[role='button'] a {
+    font-size: 1.2rem;
+  }
+
+  .landingMainContainer>div:nth-child(2) img {
+    width: min(75vw, 20rem);
+    height: auto;
+    max-height: 42vh;
+    object-fit: contain;
+  }
 }
 
 .navBar {
